@@ -16,22 +16,22 @@
         </v-col>
       </v-row>
     </v-container>
-    <galleryItemLightBox
+    <galleryLightBox
       v-if="this.lightBoxSrc != null"
       :imgSrc="lightBoxSrc"
       @hideLightBox="hideLightBox"
-    ></galleryItemLightBox>
+    ></galleryLightBox>
   </div>
 </template>
 
 <script>
 import GalleryItem from './GalleryItem'
-import GalleryItemLightBox from './GalleryItemLightBox'
+import GalleryLightBox from './GalleryLightBox'
 
 export default {
   components: {
     GalleryItem,
-    GalleryItemLightBox
+    GalleryLightBox
   },
   data () {
     return {
